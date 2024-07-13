@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, rgb(6, 63, 167), rgb(146, 179, 239));
+            margin: 0px;
+        }
+        
+        header{            
+            background-color: white;
+            margin: 5px;
+            padding-left: 7px;
+            padding-bottom: 7px;
+            border-radius: 10px;
+        }
+
+        main{
+            background-color: rgb(235, 181, 111);
+            padding-left: 7px;
+            border-radius: 10px;
+            margin: 5px;
+            box-shadow: 2px 4px 7px 3px rgb(154, 119, 74);
+        }
+
+        article{
+            background-color: rgb(235, 181, 111);
+            margin-right: 7px;
+           
+        }
+
+        article > aside{
+            background-color: rgb(177, 137, 83);
+            margin-right: 7px;
+        }
+
+        footer{
+            background-color: burlywood;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 5px;
+            border-radius: 10px;
+            box-shadow: 2px 4px 7px 3px rgb(154, 119, 74);
+        }
+        
+        nav{
+            background-color:rgb(235, 181, 111) ;
+            box-shadow: 2px 4px 7px 3px rgb(154, 119, 74);
+            margin-right:7px ;
+        }
+        
+        nav > a{
+            display: inline-block;
+            text-decoration: none;
+            color: brown;
+            margin-right: 70px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+            color: darkcyan;
+        }
+
+        nav > a:active{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>meu site</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos"></section>
+        <section id="noticias">
+            <article>
+                <h2>notícia sobre o Brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum quidem rem corrupti veritatis adipisci atque est. Earum fugiat voluptas molestias omnis odit similique reiciendis aperiam esse quasi. Facere, culpa non.</p>
+                <aside><p>escrito por Jacinto Pinto</p></aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        desenvolvido por João Lucas Mota
+    </footer>
+</body>
+</html>
