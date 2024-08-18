@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root{
+    --fonte1:verdana, geneva, tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'sriracha', cursive;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -5,27 +15,34 @@
 
 html, body{
     min-height: 100vh;
+    font-family: var(--fonte1);
 }
 
 header{
     background-color: black;
     color: white;
     text-align: center;
+    font-family: var(--fonte2);
 }
 
 header > h1 {
     padding-top: 50px;
+    font-size: 10vw;
     font-variant: small-caps;
 }
 
 header p{
     padding-bottom: 50px;
+    font-family: var(--fonte1);
+    font-size: 1em;
 }
 
 header a, footer a{
     color: white;
     text-decoration: none;
     padding-bottom: 50xp;
+    font-family: var(--fonte1);
+    font-weight: bold;
 }
 
 header a:hover, footer a:hover{
@@ -37,6 +54,8 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
 }
 
 section.normal{
@@ -50,7 +69,8 @@ section.img{
 }
 
 section.img > p{
-    width: 500px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.501);
 }
 
