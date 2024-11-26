@@ -4,18 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        h1{
+            text-align: center;
+        }
+
+        form{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>teste de formulário</h1>
+    <h1>formulário de prova</h1>
     <form action="cadastro.php" method="get">
        <p>
-           <label for="inome">nome</label>
-           <input type="text" name="nome" id="inome" required maxlength="30"
-           placeholder="nome completo" autocomplete="name">
+           <label for="inome">aluno</label>
+           <input type="text" name="nome" id="inome" required maxlength="30" placeholder="nome completo" autocomplete="name" required>
        </p>
        <p>
         <label for="imedia">media</label>
-        <input type="number" name="media" id="imedia" >
+        <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" value="7" step="0.5" required>
+       </p>
+       <p>
+           <label for="iperiodo">período letivo</label>
+           <input type="month" name="periodo" id="iperiodo" value="2024-11" required>
+       </p>
+       <p>
+           <label for="idia">dia da prova</label>
+           <input type="date" name="dia" id="idia" required>
+       </p>
+       <p>
+           <label for="ihorario">horário</label>
+           <input type="time" name="horário" id="ihorario" value="07:15">
        </p>
        <p>
             <input type="submit" value="enviar">
