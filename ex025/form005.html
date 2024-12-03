@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        fieldset{
+            border: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>exemplo de formulário</h1>
+    <form action=""> 
+        <fieldset >
+            <legend><h2>sexo</h2></legend>
+            <input type="radio" name="sexo" id="isxmas" value="M"><label for="isxmas">masculino</label>
+            <input type="radio" name="sexo" id="isxfem" value="F"><label for="isxfem">feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend><h2>esportes favoritos</h2></legend>
+            <input type="checkbox" name="esfut" id="iesfut" checked> <label for="iesfut">futebol</label> <br>
+            <input type="checkbox" name="esbaska" id="iesbas"> <label for="iesbas">basquete</label> <br>
+            <input type="checkbox" name="eshand" id="ieshand"> <label for="ieshand">handebol</label> <br>
+            <input type="checkbox" name="esvolei" id="iesvolei"> <label for="iesvolei">vôlei</label> <br>
+        </fieldset>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>
